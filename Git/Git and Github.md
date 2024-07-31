@@ -8,3 +8,8 @@
 | `git log origin/master` | View a history of commits in origin/master. |
 | `git diff origin/master` | Vies the differences between local master and origin/master. |
 | `git merge origin/master` | Merge the origin/master with the current branch. |
+| `git pull origin` | Update the local Git from origin. A combination of `fetch` and `merge`. |
+| `git pull` | Update the local Git from origin. A combination of `fetch` and `merge`. |
+| `git push origin` | Push the local Git to origin. |
+| `git branch -a` | Display all the local and remote branches. |
+| `git branch -r` | Display all the remote branches. |
