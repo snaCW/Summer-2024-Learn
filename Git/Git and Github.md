@@ -13,3 +13,4 @@
 | `git push origin` | Push the local Git to origin. |
 | `git branch -a` | Display all the local and remote branches. |
 | `git branch -r` | Display all the remote branches. |
+| `git push origin {Branch Name}` | Push {Branch Name} branch to the origin at remote server. |
