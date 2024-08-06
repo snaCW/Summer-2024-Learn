@@ -24,7 +24,7 @@
 | `git help --all` |  See all possible commands. |
 | `SHIFT + G` | Go to the end of the displayed list. |
 | `q` | Exit the current view. |
-| `git branch {branch name}` | Create a branch named {branch name}. |
+| `git branch {branch name}` | Create a branch named {branch name} based on the current branch files. |
 | `git branch` | Display all the branches. |
 | `git checkout {branch name}` | Move to the branch named {branch name}.<br/>Default name for the main branch is "master" or "main".|
 | `git checkout -b {branch name}` | Create a branch named {branch name} and move to it. |
