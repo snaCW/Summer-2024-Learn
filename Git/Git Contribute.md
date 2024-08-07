@@ -1,4 +1,4 @@
-# GitHub Contribute
+# Git Contribute
 
 ## Contents
 - [GitHub Fork](#github-fork)
