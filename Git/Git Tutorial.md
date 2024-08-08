@@ -18,7 +18,7 @@
 | `git add -A` | Add all of the files in the current directory (Staging all the changes). |
 | `git commit -m "{message}"` | Commit all the staged files to Git with {message} as description. |
 | `git commit -a -m "{message}"` | Skip the staging process and directly commit the changes with {message} as description. |
-| `git log` | View a history of commits.
+| `git log` | View a history of commits. |
 | `git {command} -help` |  See all the available options for the {command} command. |
 | `git {command} --help` |  See all the available options for the {command} command, opening Git manual page. |
 | `git help --all` |  See all possible commands. |

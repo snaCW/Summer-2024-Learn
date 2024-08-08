@@ -1,28 +1,33 @@
 # Git Undo
 
 ## Contents
+
 - [Git Revert](#git-revert)
-    - [Git Revert Find Commit in Log](#git-revert-find-commit-in-log)
-    - [Git Revert HEAD](#git-revert-head)
+  - [Git Revert Find Commit in Log](#git-revert-find-commit-in-log)
+  - [Git Revert HEAD](#git-revert-head)
 - [Git Reset](#git-reset)
-    - [Git Reset Find Commit in Log](#git-reset-find-commit-in-log)
-    - [Git Reset Hash](#git-reset-hash)
-    - [Git Undo Reset](#git-undo-reset)
+  - [Git Reset Find Commit in Log](#git-reset-find-commit-in-log)
+  - [Git Reset Hash](#git-reset-hash)
+  - [Git Undo Reset](#git-undo-reset)
 
 ## Git Revert
+
 `revert` is a command to take a previous `commit` and add it as a new `commit`. Steps are clear:
 
 1. Find a previous `commit`
 2. Use it to make a new `commit`
 
 Delete your `cpp` file in the `Git Ignore Test` local repository. `stage` your changes and `commit` the changes.
+
 ```Bash
 git add -A
 git commit -m "I'm sure I didn't deleted the cpp file"
 ```
 
 ### Git Revert Find Commit in Log
+
 Now we want to return back to the point before the last `commit`. We can find the desired point using `log`.
+
 ```Bash
 git log
 ```
@@ -32,20 +37,24 @@ Since we only had two `commits`, the list isn't long. However, it is pretty norm
 Press `SHIFT + G` to go to the end of the list and `q` to exit the current view.
 
 Working with long lists is hard, so we use the `--oneline` option.
+
 ```Bash
 git log --oneline
 ```
 
 In each line you can see two data.
+
 - First seven digits of `commit hash`
 - the `commit message`
 
 In our case we want to return back to before the `a8372d6 (HEAD -> main) I'm sure I didn't deleted the cpp file` commit. Notice that the `commit hash` is not same in your Git.
 
 ### Git Revert HEAD
+
 The last `commit` is always this syntax: `(HEAD -> main, {Branch name merged from})`. Since we didn't `merge` anything, our last `commit` is `(HEAD) -> main`.
 
 This is good, because we can use the `HEAD` keyword to revert back to before the last `commit`.
+
 ```Bash
 git revert HEAD --no-edit
 ```
@@ -57,11 +66,13 @@ What if we wanted to `revert` to one commit before the last commit? The common m
 > Please note that after using `git revert HEAD`, you are **committing** the point before the last `commit`. It means the second `commit` will only take you to the last commit!
 
 Use this command to `revert` to the earlier commits:
+
 ```Bash
 git revert HEAD~{Count of going back}
 ```
 
 To revert back to the point before the second commit, just use:
+
 ```Bash
 git revert HEAD~2
 ```
@@ -69,14 +80,17 @@ git revert HEAD~2
 The total point of `revert` is to **turn back** and **commit**. You can use `reset` to not commit after turning back.
 
 ## Git Reset
+
 This is the same as `revert`, we have two steps.
 
 ### Git Reset Find Commit in Log
+
 Just use the `log` and find a point to `reset` there.
 
 We want to go to the point before `a8372d6 I'm sure I didn't deleted the cpp file`. So note the `Commit Hash` of the commit before.
 
 ### Git Reset Hash
+
 ```Bash
 git reset {Commit Hash}
 ```
@@ -86,6 +100,7 @@ This command changes the log history in order to set the `Commit Hash` as the la
 Please do not mess with `reset` especially in remote repositories.
 
 ### Git Undo Reset
+
 Even though the commits are no longer showing up in `log`, you can still `reset` to them.
 
 ## Git Amend
