@@ -89,3 +89,52 @@ Please do not mess with `reset` especially in remote repositories.
 Even though the commits are no longer showing up in `log`, you can still `reset` to them.
 
 ## Git Amend
+
+### Git commit --amend
+
+`commit --amend` is used to modify the most recent `commit`, combining changes in the `staging enviroment` with the latest `commit`. This new `commit` will replace the latest `commit` entirely.
+
+### Git Amend Commit Message
+
+Add a `README.md` file to the `Git Ignore Test`. Then commit the changes with this message: `Added RAEDME.md`. As you can see, the message has a misspelled word.
+
+```Bash
+git add -A
+git commit -m "Added RAEDME.md"
+```
+
+Now check the `log`:
+
+```Bash
+git log --oneline
+```
+
+We want to change the message of the last `commit`.
+
+```Bash
+git commit --amend -m "Added README.md"
+git log --oneline
+```
+
+Now you should be able to see how `amend` worked to change the message of the last `commit`.
+
+> With `amend` you can mess with a repository log. Please be careful about using it.
+
+### Git Amend Files
+
+Now write something in the `README.md` file and `commit`.
+
+```Bash
+git add -A
+git commit -m "Updated README.md"
+```
+
+Now change the contents of `README.md` to your desire and then use `amend`.
+
+```Bash
+git add README.md
+git commit --amend -m "Added and Updated README.md"
+git log --oneline
+```
+
+Now you can see how you used `amend` to change the last `commit`.

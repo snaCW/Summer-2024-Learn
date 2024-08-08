@@ -11,9 +11,9 @@ A `fork` is a copy of a repository. `fork` is not available in Git, it's somethi
 ## Git Clone from GitHub
 A `clone` is a full copy of a repository, including all logging and versions of files.
 
-To `clone` a repository at GitHub, you click on the green "Code" button and get the `URL`. Then open your Git bash and `clone` the repository:
+To `clone` a repository at GitHub on your local Git, you click on the green "Code" button and get the `URL`. Then open your Git bash and `clone` the repository. If you only wanted to `clone` to a specific folder, write the address.
 ```
-git clone {URL}
+git clone {URL} {to folder}
 ```
 
 By looking at your file system, you can see the new directory by `ls` and then navigate to the directory by `cd`.
