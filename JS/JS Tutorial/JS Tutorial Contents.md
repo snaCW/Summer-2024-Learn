@@ -5,3 +5,4 @@
 - [JS Output](JS%20Output.md)
 - [JS Statements](JS%20Statements.md)
 - [JS Syntax](JS%20Syntax.md)
+- [JS Comments](JS%20Comments.md)
