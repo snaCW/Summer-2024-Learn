@@ -6,3 +6,4 @@
 - [JS Statements](JS%20Statements.md)
 - [JS Syntax](JS%20Syntax.md)
 - [JS Comments](JS%20Comments.md)
+- [JS Variables](JS%20Variables.md)
