@@ -7,6 +7,7 @@
 - [Perceptrons](#perceptrons)
 - [Neural Networks](#neural-networks)
 - [Deep Neural Networks](#deep-neural-networks)
+- [Deep Learning (DL)](#deep-learning-dl)
 
 ## Machine Learning (ML)
 
@@ -50,3 +51,19 @@ The perceptrons are making decisions by weighing the results from the first laye
 
 ## Deep Neural Networks
 
+Deep Neural Networks are made up of several hidden layers of neural networks that perform complex operations on massive amounts of data.
+
+Each successive layer uses the preceding layer as input.
+
+It has more layers.
+
+## Deep Learning (DL)
+
+Deep Learning is a subset of Machine Learning.
+
+|      Machine Learning     |        Deep Learning         |
+| ------------------------- | ---------------------------- |
+| A subset of AI            | A subset of Machine Learning |
+| Uses smaller data sets    | Uses larger datasets         |
+| Trained by humans         | Learns on its own            |
+| Creates simple algorithms | Creates complex algorithms   |
