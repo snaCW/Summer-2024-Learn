@@ -5,7 +5,7 @@
 - [What is Artificial Intelligence?](#what-is-artificial-intelligence)
 - [Artificial Intelligence (AI)](#artificial-intelligence-ai)
 - [Narrow AI](#narrow-ai)
-- [Strong AI]()
+- [Strong AI](#strong-ai)
 
 ## What is Artificial Intelligence?
 
@@ -50,3 +50,15 @@ Weak AI: Built to **simulate** human intelligence.
 
 ## Strong AI
 
+**Strong Artificial Intelligence** is the type of AI that mimics human intelligence.
+
+Strong AI indicates the ability to think, plan, learn, and communicate.
+
+Strong AI is the theoretical next level of AI: True Intelligence.
+
+Strong AI moves towards machines with self-awareness, consciousness, and objective thoughts.
+
+> *One need not decide if a machine can "think".
+One need only decide if a machine can act as intelligently as a human.*
+>
+> Alan Turing
