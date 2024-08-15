@@ -16,6 +16,8 @@
 
 ## Python
 
+1. [Python Tutorial](Python/Python%20Tutorial/Python%20Tutorial%20Contents.md)
+
 ## Markdown
 
 ## ML
