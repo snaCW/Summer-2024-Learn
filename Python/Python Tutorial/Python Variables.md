@@ -10,6 +10,8 @@
 - [Many Values to Multiple Variables](#many-values-to-multiple-variables)
 - [One Value to Multiple Variables](#one-value-to-multiple-variables)
 - [Unpack a Collection](#unpack-a-collection)
+- [Output Variables](#output-variables)
+- [Global Variables](#global-variables)
 
 ## Casting
 
@@ -208,3 +210,157 @@ If you have a collection of values, you can assign them to variables. This is ca
     ```
 
 2. Execute. You can see the result.
+
+## Output Variables
+
+The Python `print()` function is used to output variables.
+
+You have already seen a lot of programs we wrote here that used `print()`. However you can use this function to print multiple variables, seperated by a comma.
+
+### [python_print_multiple_variables_comma](Programs/python_print_multiple_variables_comma.py) program
+
+1. Create three variables.
+
+    ``` Py
+    x = "Python"
+    y = "is"
+    z = "awesome"
+    ```
+
+2. Use `print()` function to print them all.
+
+    ``` Py
+    print(x, y, z)
+    ```
+
+3. You can see the result:
+
+    ``` Text
+    Python is awesome
+    ```
+
+Please note that when you use **comma**, Python automatically adds **spaces** between variables.
+
+### [python_print_multiple_variables_plus](Programs/python_print_multiple_variables_plus.py) program
+
+1. Use the previous example, but change the last line to below.
+
+    ``` Py
+    print(x + y + z)
+    ```
+
+2. Execute the program.
+
+    ``` Text
+    Pythonisawesome
+    ```
+
+    We can see that no **spaces** is added automatically.
+
+3. To have a better result, add a space to the end of the value of `x` and `y`.
+
+    ``` Py
+    x = "Python "
+    y = "is "
+    z = "awesome"
+    print(x + y + z)
+    ```
+
+So you should add spaces or any characters you want to split the variables by yourself.
+
+### [python_print_add_two_numbers](Programs/python_print_add_two_numbers.py) program
+
+1. You can use `+` character as a mathematical operator in `print()` function. Create two numerical variables.
+
+    ``` Py
+    x = 5
+    y = 10
+    ```
+
+2. Use `print()` and then execute.
+
+    ``` Py
+    print(x + y)
+    ```
+
+### [python_print_number_and_string](Programs/python_print_number_and_string.py) program
+
+1. We want print a number and a string together.
+
+    ``` Py
+    x = 5
+    y = "John"
+    print(x + y)
+    ```
+
+2. If you execute the program, you will get the following error:
+
+    ``` Text
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+    ```
+
+    It seems you can't add a string to an integer that is unlogical. The best way to print multiple variables in the `print()` function is to use **commas**.
+
+3. Use commas.
+
+    ``` Py
+    x = 5
+    y = "John"
+    print(x, y)
+    ```
+
+## Global Variables
+
+Variables that are created outside of a function are known as global variables.
+
+Global variables can be use by everyone, inside or outside of the functions.
+
+### [python_global_variables](Programs/python_global_variables.py) program
+
+1. Create a global variable.
+
+    ``` Py
+    x = "awesome"
+    ```
+
+2. Define a function that uses this variable.
+
+    ``` Py
+    def myfunc():
+        print("Python is " + x)
+    ```
+
+3. Call the function.
+
+    ``` Py
+    myfunc()
+    ```
+
+4. Execute. You can see by calling the `myfunc()` function, all the statements in the function are executed.
+
+### [python_local_and_global_variables](Programs/python_local_and_global_variables.py) program
+
+1. Create a global variable.
+
+    ``` Py
+    x = "awesome"
+    ```
+
+2. Define a function that defines a local variable with the same name.
+
+    ``` Py
+    def myfunc():
+        x = "fantastic"
+        print(x)
+    ```
+
+3. Call this function to see the value of `x`. Also print `x`.
+
+    ``` Py
+    myfunc()
+    print(x)
+    ```
+
+4. Execute.
+
+You can see the `myfunc()` function uses its own local variable over the global one. However the `print(x)` statement only knows the global variable, so it will print `awesome`.
